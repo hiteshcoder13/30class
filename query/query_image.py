@@ -33,11 +33,3 @@ def query_image(image_path, top_k=200):
     return top_families
 
 
-if name == "__main__":
-    query_img = "/home/Unthinkable/Documents/poc_stone_color/aug_00094.jpg"
-    results = query_image(query_img)
-
-    print("\n🎯 Top Matching Stone Families:\n")
-
-    for i, (family, count) in enumerate(results, 1):
-        print(f"{i}. {family} (score: {count})")
