@@ -28,7 +28,7 @@ def query_image(image_path, top_k=200):
     counter = Counter(families)
 
     # Top 20 families
-    top_families = counter.most_common(30)
+    top_families = counter.most_common(40)
 
     return top_families
 
