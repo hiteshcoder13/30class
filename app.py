@@ -4,7 +4,8 @@ import tempfile
 import os
 
 from query.query_image import query_image
-
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 st.set_page_config(page_title="Stone Color Search", layout="wide")
 
